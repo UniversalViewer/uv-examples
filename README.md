@@ -1,4 +1,4 @@
 # uv-examples
 
-- [JS Example](js/README.md)
-- [React Example](react/README.md)
+- [JS Example](js/)
+- [React Example](react/)
