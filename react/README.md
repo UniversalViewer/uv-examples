@@ -1,5 +1,5 @@
 # UV React Example
 
-  npm i
-  
-  npm start
+    npm i
+
+    npm start
