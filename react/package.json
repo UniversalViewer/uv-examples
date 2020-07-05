@@ -1,0 +1,34 @@
+{
+  "name": "uv-examples",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-scripts": "3.0.1",
+    "universalviewer": "^4.0.0-pre.16"
+  },
+  "devDependencies": {
+    "typescript": "3.8.3"
+  },
+  "scripts": {
+    "copy": "npm run copy-uv-assets && npm run copy-uv-dist-umd && npm run copy-uv-html && npm run copy-uv-css",
+    "copy-uv-assets": "cp -R node_modules/universalviewer/dist/uv-assets ./public/uv-assets",
+    "copy-uv-dist-umd": "cp -R node_modules/universalviewer/dist/uv-dist-umd ./public/uv-dist-umd",
+    "copy-uv-html": "cp -R node_modules/universalviewer/dist/uv.html ./public",
+    "copy-uv-css": "cp -R node_modules/universalviewer/dist/uv.css ./public",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "postinstall": "npm run copy"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "uv-examples",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "dependencies": {
+    "universalviewer": "^4.0.0-pre.16"
+  },
+  "scripts": {
+    "copy": "npm run copy-uv-assets && npm run copy-uv-dist-umd && npm run copy-uv-html && npm run copy-uv-css",
+    "copy-uv-assets": "cp -R node_modules/universalviewer/dist/uv-assets ./uv-assets",
+    "copy-uv-dist-umd": "cp -R node_modules/universalviewer/dist/uv-dist-umd ./uv-dist-umd",
+    "copy-uv-html": "cp -R node_modules/universalviewer/dist/uv.html ./",
+    "copy-uv-css": "cp -R node_modules/universalviewer/dist/uv.css ./",
+    "postinstall": "npm run copy",
+    "start": "npx http-server ./ -o -c-1"
+  }
+}
