@@ -8,8 +8,8 @@
     <!-- include this if using 3D: https://github.com/UniversalViewer/universalviewer/issues/716 -->
     <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
     <!-- must include jQuery and jsViews for the UV for now -->
-    <script type="text/javascript" src="uv-assets/js/bundle.js"></script>
-    <script type="text/javascript" src="uv-dist-umd/UV.js"></script>
+    <script src="uv-assets/js/bundle.js"></script>
+    <script src="uv-dist-umd/UV.js"></script>
     <title>UV Examples | js</title>
     <style>
       body {
@@ -24,7 +24,7 @@
   <body>
     <div id="uv" class="uv"></div>
 
-    <script type="text/javascript">
+    <script>
       var uv = UV.init(
         "uv",
         {
