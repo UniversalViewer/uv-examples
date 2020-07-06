@@ -8,8 +8,8 @@
   },
   "scripts": {
     "copy": "npm run copy-uv-assets && npm run copy-uv-dist-umd && npm run copy-uv-html && npm run copy-uv-css",
-    "copy-uv-assets": "cp -R node_modules/universalviewer/dist/uv-assets ./uv-assets",
-    "copy-uv-dist-umd": "cp -R node_modules/universalviewer/dist/uv-dist-umd ./uv-dist-umd",
+    "copy-uv-assets": "cp -R node_modules/universalviewer/dist/uv-assets ./",
+    "copy-uv-dist-umd": "cp -R node_modules/universalviewer/dist/uv-dist-umd ./",
     "copy-uv-html": "cp -R node_modules/universalviewer/dist/uv.html ./",
     "copy-uv-css": "cp -R node_modules/universalviewer/dist/uv.css ./",
     "postinstall": "npm run copy",

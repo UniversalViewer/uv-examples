@@ -15,8 +15,8 @@
   },
   "scripts": {
     "copy": "npm run copy-uv-assets && npm run copy-uv-dist-umd && npm run copy-uv-html && npm run copy-uv-css",
-    "copy-uv-assets": "cp -R node_modules/universalviewer/dist/uv-assets ./public/uv-assets",
-    "copy-uv-dist-umd": "cp -R node_modules/universalviewer/dist/uv-dist-umd ./public/uv-dist-umd",
+    "copy-uv-assets": "cp -R node_modules/universalviewer/dist/uv-assets ./public",
+    "copy-uv-dist-umd": "cp -R node_modules/universalviewer/dist/uv-dist-umd ./public",
     "copy-uv-html": "cp -R node_modules/universalviewer/dist/uv.html ./public",
     "copy-uv-css": "cp -R node_modules/universalviewer/dist/uv.css ./public",
     "start": "react-scripts start",
