@@ -1,21 +1,24 @@
 {
-  "name": "uv-examples",
+  "name": "react",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "React example starter project",
+  "keywords": [
+    "react",
+    "starter"
+  ],
   "main": "src/index.js",
   "dependencies": {
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
-    "react-scripts": "3.0.1",
-    "universalviewer": "^4.0.0-pre.16"
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-scripts": "4.0.0",
+    "universalviewer": "4.0.0-pre.56"
   },
   "devDependencies": {
-    "typescript": "3.8.3"
+    "@babel/runtime": "7.13.8",
+    "typescript": "4.1.3"
   },
   "scripts": {
-    "copy": "npm run copy-uv-assets && npm run copy-uv-dist-umd && npm run copy-uv-html && npm run copy-uv-css",
-    "copy-uv-assets": "cp -R node_modules/universalviewer/dist/uv-assets ./public",
+    "copy": "npm run copy-uv-dist-umd && npm run copy-uv-html && npm run copy-uv-css",
     "copy-uv-dist-umd": "cp -R node_modules/universalviewer/dist/uv-dist-umd ./public",
     "copy-uv-html": "cp -R node_modules/universalviewer/dist/uv.html ./public",
     "copy-uv-css": "cp -R node_modules/universalviewer/dist/uv.css ./public",

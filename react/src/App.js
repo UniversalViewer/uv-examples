@@ -15,10 +15,6 @@ const UV = ({manifest, width = '100vw', height = '100vh'}) => {
         manifestUri: manifest
       });
 
-    uv.on('created', () => {
-      uv.resize();
-    }, false);
-
   }, [manifest]);
 
   return <div ref={el} id="uv" className="uv" style={{
